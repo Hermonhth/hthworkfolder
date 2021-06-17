@@ -11,3 +11,14 @@ city_names[5]= "Brooklyn"
 city_names.append("New Jersey")
 city_names.extend(["Chicago", "Santa Cruiz", "Washingtron"])
 print(city_names)
+del city_names[9]
+city_names.remove("Santa Cruiz")
+city_names.pop[2]
+
+def check_all(list1):
+    for element in list1:
+        print(element)
+
+    return "Done"
+
+print (check_all(city_names))

@@ -11,6 +11,14 @@ grocery_list = {
     "Cheese": 1,
     "Milk": 2.5,
 }
+def total_price(item1 , item2 ):
+price1 = grocery_list[item1]
+price2 = grocery_list[item2]
+total = price1 + price2
+
+return total
+print (total_price("Beef", "Cheese"))
+
 
 EPL_standings = {
     "Chealsea": 4,
