@@ -11,13 +11,20 @@ grocery_list = {
     "Cheese": 1,
     "Milk": 2.5,
 }
-def total_price(item1 , item2 ):
-price1 = grocery_list[item1]
-price2 = grocery_list[item2]
-total = price1 + price2
+def total_price(item1,item2):
+    price1 = grocery_list[item1]
+    price2 = grocery_list[item2]
+    total = price1 + price2
 
-return total
+    return total    
 print (total_price("Beef", "Cheese"))
+
+def price_difference (item1, item2):
+    price1 = grocery_list[item1]
+    price2 = grocery_list[item2]
+    dif = price1 - price2
+
+    return dif
 
 
 EPL_standings = {
@@ -53,5 +60,19 @@ shoe_sales ["Foamposite"]-=3
 shoe_sales ["Airmax"]-=3
 shoe_sales ["SB Dunk"]-=3
 print(shoe_sales)
+
+
+def restock (shoe_sales, num):
+    oldstock = stock_number[shoes_sales]
+    stock_number[shoes_sales] = old_stock * 1
+
+    return stock_number
+
+def point_difference (item1, item2):
+    team1 = EPL_standings[item1]
+    team2 = EPL_standings[item2]
+    difference = team1 - team2
+
+    return difference
 
 
