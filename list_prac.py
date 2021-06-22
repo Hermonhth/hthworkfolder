@@ -22,3 +22,28 @@ def check_all(list1):
     return "Done"
 
 print (check_all(city_names))
+
+
+def printCityNames():
+    counter = 0
+    while counter < len(city_names):
+        print(city_names[counter])
+        counter += 1
+    return "completed"
+    
+printCityNames() 
+
+def organize_cities(cities_list):
+    for index in range(len(cities_list)-1):
+        if cities_list[index] >= cities_list [index +1]:
+         continue
+    
+        else: 
+            city = cities_list[index]
+            cities_list.pop[index]
+            cities_list.append(city)
+        return cities_list
+
+
+
+print(organize_cities(city_names))

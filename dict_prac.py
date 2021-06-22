@@ -47,6 +47,19 @@ shoe_sales= {
 "SB Dunk":20,
 }
 
+def restock(shoe_name, multiplier):
+    newInv = shoe_sales[shoe_name] * multiplier
+    shoe_sales[shoe_name] = newInv
+    return shoe_sales
+
+def clearance_sale(shoe_name, discount):
+    newInv = shoe_sales[shoe_name] / discount
+    shoe_sales[shoe_name] = newInv
+    return shoe_sales
+
+
+
+
 shoe_sales ["SB Dunk"] = 22
 shoe_sales ["Yeezy"] =7
 shoe_sales ["Jordan13"]+=7
@@ -61,12 +74,6 @@ shoe_sales ["Airmax"]-=3
 shoe_sales ["SB Dunk"]-=3
 print(shoe_sales)
 
-
-def restock (shoe_sales, num):
-    oldstock = stock_number[shoes_sales]
-    stock_number[shoes_sales] = old_stock * 1
-
-    return stock_number
 
 def point_difference (item1, item2):
     team1 = EPL_standings[item1]
